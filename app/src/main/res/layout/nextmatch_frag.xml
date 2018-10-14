@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Spinner
+       android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/spinnerLiga"
+        />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/swiping"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recNext"
+            />
+        <ProgressBar
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/pgBars"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

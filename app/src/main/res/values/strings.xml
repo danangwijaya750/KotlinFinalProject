@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <array name="liga">
+        <item>4328-English Premier League</item>
+        <item>4329-English League Championship</item>
+        <item>4331-German Bundesliga</item>
+        <item>4332-Italian Serie A</item>
+        <item>4334-French Ligue 1</item>
+        <item>4335-Spanish La Liga</item>
+    </array>
+    <array name="match">
+        <item>Past Match</item>
+        <item>Next Match</item>
+    </array>
+
+</resources>
+

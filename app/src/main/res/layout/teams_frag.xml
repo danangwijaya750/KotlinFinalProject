@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutss"
+
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+        <Spinner
+            android:id="@+id/spinnerLiga"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            />
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/swiping"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recTeam"
+                />
+            <ProgressBar
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/pgBars"
+                />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
