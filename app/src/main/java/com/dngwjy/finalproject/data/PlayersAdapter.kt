@@ -28,6 +28,7 @@ class PlayersAdapter(val context: Context, val data:List<Players>, val listener 
         fun BindItem(player:Players,listen:(Players)->Unit){
                 Picasso.get().load(player.strCutout).into(playerImage)
                 playerName.text=player.strPlayer
+                itemView.setOnClickListener { listen(player) }
         }
 
     }

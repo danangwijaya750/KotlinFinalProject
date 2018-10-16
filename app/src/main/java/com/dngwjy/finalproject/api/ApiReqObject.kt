@@ -12,6 +12,9 @@ object ApiReqObject {
     fun searchEvent(param :String):String{
         return "https://www.thesportsdb.com/api/v1/json/1/searchevents.php?e=$param"
     }
+	fun SearchTeamUrl(param:String):String{
+		return "https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=$param"
+	}
     fun LigaReq():String{
         return ""
     }

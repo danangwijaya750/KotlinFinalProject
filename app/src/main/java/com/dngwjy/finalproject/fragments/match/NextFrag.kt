@@ -112,8 +112,9 @@ class NextFrag : Fragment(), NextMatchFragView{
         }
         recyclerView=rootView.findViewById(R.id.recNext)
         adapter= EventAdapter(this.context!!,data){
+	        DetailMatch.caller="match"
             val intent = Intent(this.context,DetailMatch::class.java)
-            intent.putExtra("idMatch",it.idEvent)
+            intent.putExtra("idMatch",it)
             startActivity(intent)
         }
         val linMan=LinearLayoutManager(this.context)

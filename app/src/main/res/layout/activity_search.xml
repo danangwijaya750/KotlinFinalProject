@@ -3,35 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SearchActivity"
     android:orientation="vertical"
-    android:padding="5dp"
-    android:layout_height="match_parent">
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:id="@+id/search"
-        android:text="Search"
-        />
-<LinearLayout
+    android:padding="10dp"
+    >
+<EditText
+    android:id="@+id/searchEdit"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    >
-    <Spinner
+    />
+    <android.support.v4.widget.SwipeRefreshLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:id="@+id/spinnerMatch"
-        />
-</LinearLayout>
-    <LinearLayout
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
+        android:id="@+id/swiping"
         >
-
-    <FrameLayout
-      android:layout_height="match_parent"
-      android:layout_width="match_parent"
-      android:id="@+id/frameMatch"
-      />
-    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/recSearch"
+        />
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

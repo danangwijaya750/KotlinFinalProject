@@ -1,5 +1,6 @@
 package com.dngwjy.finalproject.fragments.team
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.widget.SwipeRefreshLayout
@@ -9,6 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.dngwjy.finalproject.R
+import com.dngwjy.finalproject.activities.DetailPlayer
 import com.dngwjy.finalproject.api.ApiRequest
 import com.dngwjy.finalproject.data.PlayersAdapter
 import com.dngwjy.finalproject.data.models.Players
@@ -43,7 +45,9 @@ class TeamPlayersFrag : Fragment(), TeamPlayersView {
         layMan.orientation=LinearLayoutManager.VERTICAL
         recyclerView.layoutManager=layMan
         adapter= PlayersAdapter(this.context!!,dataPlayer){
-
+			val intent = Intent(this.context, DetailPlayer::class.java)
+            intent.putExtra("playerData",it)
+            startActivity(intent)
         }
         recyclerView.adapter=adapter
         swipeRefreshLayout.onRefresh {

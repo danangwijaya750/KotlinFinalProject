@@ -21,7 +21,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.DetailMatch" />
-        <activity android:name=".activities.TeamDetail"></activity>
+        <activity android:name=".activities.TeamDetail" />
+        <activity android:name=".activities.DetailPlayer" />
+        <activity android:name=".activities.SearchActivity"></activity>
     </application>
 
 </manifest>

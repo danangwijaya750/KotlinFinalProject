@@ -101,8 +101,9 @@ class PastFrag : Fragment(), PastMatchFragView {
             presenter.getData(spinner.selectedItem.toString().substring(0,4))
         }
         adapter= EventAdapter(this.context!!,data){
+	        DetailMatch.caller="match"
             var intent=Intent(this.context,DetailMatch::class.java)
-            intent.putExtra("idMatch",it.idEvent)
+            intent.putExtra("idMatch",it)
             startActivity(intent)
         }
         val linMan=LinearLayoutManager(this.context)

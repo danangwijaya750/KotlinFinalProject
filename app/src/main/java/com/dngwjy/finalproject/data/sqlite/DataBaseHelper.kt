@@ -28,7 +28,8 @@ class DataBaseHelper(ctx:Context):ManagedSQLiteOpenHelper(ctx,"BOOKMARK.db",null
 				"date" to TEXT)
 		db.createTable("TB_TEAMS",true,
 				"ID" to INTEGER+ PRIMARY_KEY+ AUTOINCREMENT,
-				"TeamsID" to TEXT
+				"TeamsID" to TEXT,"TeamsName" to TEXT, "TeamsDesc" to TEXT,"TeamPic" to TEXT
+				,"TeamStadium" to TEXT, "TeamYear" to TEXT
 				)
 	}
 

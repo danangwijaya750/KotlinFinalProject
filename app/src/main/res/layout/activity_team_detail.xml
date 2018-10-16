@@ -11,17 +11,43 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@color/colorPrimary"
     >
     <ImageView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_width="150dp"
         android:scaleType="fitCenter"
         android:id="@+id/teamImage"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/teamName"
+        android:textColor="#fff"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/teamStadium"
+        android:textColor="#fff"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/teamsYear"
+        android:textColor="#fff"
+        />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Add"
+        android:id="@+id/btnBook"
         />
     <android.support.design.widget.TabLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         app:tabMode="fixed"
+        app:tabTextColor="#fff"
         android:id="@+id/teamTab"
         />
 </LinearLayout>

@@ -15,6 +15,7 @@ import com.dngwjy.finalproject.R
 import com.dngwjy.finalproject.fragments.FavFrag
 import com.dngwjy.finalproject.fragments.MatchFrag
 import com.dngwjy.finalproject.fragments.TeamsFrag
+import com.dngwjy.finalproject.fragments.favorite.MatchFavFrag
 import com.dngwjy.finalproject.fragments.match.NextFrag
 import com.dngwjy.finalproject.fragments.match.PastFrag
 import com.dngwjy.finalproject.views.MainActivityView

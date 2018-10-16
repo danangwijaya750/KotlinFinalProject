@@ -46,4 +46,6 @@ fun GetDetaildata(id:String){
         }
     }
 
+
+
 }

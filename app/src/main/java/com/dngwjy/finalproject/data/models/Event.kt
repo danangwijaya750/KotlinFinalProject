@@ -1,8 +1,10 @@
 package com.dngwjy.finalproject.data.models
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
-
+@Parcelize
 data class Event(
         @SerializedName("idEvent")
         val idEvent: String?="",
@@ -50,4 +52,4 @@ data class Event(
         val idHomeTeam: String?="",
         val idAwayTeam: String?="",
         val strLocked: String?=""
-)
+) : Parcelable

@@ -16,6 +16,9 @@
         <item>Past Match</item>
         <item>Next Match</item>
     </array>
-
+    <array name="fav">
+        <item>Match</item>
+        <item>Teams</item>
+    </array>
 </resources>
 
